@@ -1,7 +1,7 @@
 export default function TechStack() {
   return (
-    <div className="p-10 mt-0">
-      <h3 className="text-4xl text-black">Technologies</h3>
+    <div className="mt-0 mb-2">
+      <h2 className="font-bold text-2xl text-gray-800">Technologies</h2>
       <p className="text-md py-1 leading-8 text-gray-800">
         <span className="font-semibold text-gray-800">[ Languages ]</span> :
         Python, TypeScript, JavaScript, SQL
