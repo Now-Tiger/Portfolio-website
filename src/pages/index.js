@@ -3,8 +3,11 @@ import Head from "next/head";
 import Nav from "@/components/Nav";
 import Intro from "@/components/Intro";
 import TechStack from "@/components/technologoies";
-import ProjectsSection from "@/components/projects";
 import Footer from "@/components/footer";
+import ImageCard from "@/components/ImageCard";
+
+import web1 from "../../public/web1.png";
+import web2 from "../../public/web2.png";
 
 export default function Home() {
   return (
@@ -18,10 +21,39 @@ export default function Home() {
         <section className="min-h-screen">
           <Nav />
           <Intro />
+          {/* Projects below */}
+          <div className="basis-1/3 flex-1">
+            <h2 className="font-bold text-2xl text-gray-800 p-5">Projects</h2>
+            <ImageCard imgSrc={web1}>
+              <h3 className="text-xl font-bold mb-2">SpamHam RESTApi</h3>
+              <p className="">
+                Designed and developed a state-of-the art machine learning model
+                to accurately classify emails as phishing or non-phishing.
+                Leveraged the FastAPI framework for a high-performance
+                deployment integration, ensuring an optimized API service.
+                Engineered features from raw email data, enhancing the
+                model&apos;s ability to discern subtle cues of phishing
+                attempts.
+              </p>
+            </ImageCard>
+          </div>
+          <div className="basis-1/3 flex-1">
+            <ImageCard imgSrc={web2}>
+              <h3 className="text-xl font-bold mb-2">SpamHam RESTApi</h3>
+              <p>
+                Designed and developed a state-of-the art machine learning model
+                to accurately classify emails as phishing or non-phishing.
+                Leveraged the FastAPI framework for a high-performance
+                deployment integration, ensuring an optimized API service.
+                Engineered features from raw email data, enhancing the
+                model&apos;s ability to discern subtle cues of phishing
+                attempts.
+              </p>
+            </ImageCard>
+          </div>
           <TechStack />
-          <ProjectsSection />
-          <Footer />
         </section>
+        <Footer />
       </main>
     </div>
   );
