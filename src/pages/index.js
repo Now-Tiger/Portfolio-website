@@ -22,8 +22,9 @@ export default function Home() {
           <Nav />
           <Intro />
           {/* Projects below */}
-          <div className="basis-1/3 flex-1">
-            <h2 className="font-bold text-2xl text-gray-800 p-5">Projects</h2>
+          <h2 className="font-bold text-2xl text-gray-800 p-5">Projects</h2>
+          <div className="lg:flex">
+          <div className="">
             <ImageCard imgSrc={web1}>
               <h3 className="text-xl font-bold mb-2">SpamHam RESTApi</h3>
               <p className="">
@@ -37,7 +38,7 @@ export default function Home() {
               </p>
             </ImageCard>
           </div>
-          <div className="basis-1/3 flex-1">
+          <div className="ps-20">
             <ImageCard imgSrc={web2}>
               <h3 className="text-xl font-bold mb-2">SpamHam RESTApi</h3>
               <p>
@@ -50,6 +51,7 @@ export default function Home() {
                 attempts.
               </p>
             </ImageCard>
+          </div>
           </div>
           <TechStack />
         </section>
